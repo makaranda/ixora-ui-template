@@ -9903,8 +9903,10 @@ textarea.form-control {
   .navbar .active .nav-link.scrol_text {
     background-color: #fff;
   }
-  .navbar .nav-link {
-    padding: 3% !important;
+  @media (max-width: 400px) {
+      .navbar .nav-link {
+        padding: 3% !important;
+      }
   }
   
   .nav-link.scrol_text:hover {

@@ -30,6 +30,7 @@ if(isset($_POST['name'],$_POST['email'],$_POST['services'],$_POST['message'],$_P
         try {
             //Server settings
             //$mail->SMTPDebug = SMTP::DEBUG_SERVER;   
+            
             $mail->SMTPDebug = 0;                   //Enable verbose debug output
             $mail->isSMTP();                                            //Send using SMTP
             $mail->Host       = 'sigiri.globemw.net';                     //Set the SMTP server to send through

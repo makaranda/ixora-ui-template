@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>IXORA - Every Kinds of ITSolution</title>
+	<title>IXORA - Every Kinds of IT Solution</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+	<link rel="canonical" href="https://ixoralk.com/" />
+
+	<meta property="og:locale" content="en_US" />
+
+	<meta property="og:type" content="website" />
+
+	<meta property="og:title" content="ixoralk.com | Every Kinds of IT Solution" />
+
+	<meta property="og:url" content="https://ixoralk.com/" />
+
+	<meta property="og:site_name" content="ixoralk.com | Every Kinds of IT Solution" />
+
+	<meta property="article:publisher" content="https://www.facebook.com/ixoralk.com/" />
+
+	<meta property="article:modified_time" content="2024-07-09T21:28:22+00:00" />
+
+	<meta property="og:image" content="https://ixoralk.com/images/main_logo_2.png" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+
+	<meta name="twitter:site" content="@ixoralk.com" />
+
+	<meta name="twitter:label1" content="Est. reading time" />
+
+	<meta name="twitter:data1" content="14 minutes" />
+
+    <meta name="keywords" content="IT, Solution, ixoralk, Services , Solutions, Experts, Sri Lanka, Districts, Provinces, World">
+    <meta name="description" content="Founded on the principles of integrity, collaboration, and technological expertise, IXORA serves as a strategic partner for organizations seeking to leverage the latest advancements in information and communication technology (ICT).">
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet"/>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -17,9 +46,11 @@
 	<link rel="stylesheet" href="css/magnific-popup.css">
 
 	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/style.css?v=657">
+	<link rel="stylesheet" href="css/parsley.css">
+	<link rel="stylesheet" href="css/style.css?v=8745">
 </head>
 <body>
+	<span id="loading_response" class="col-12 d-none"><div class="textloading col-12">Processing......</div></span>
 	<div class="wrap">
 		<div class="container">
 			<div class="row justify-content-between">
@@ -73,7 +104,7 @@
 							<p class="mb-4 pl-md-5 line" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">A small river named Duden flows by their place and supplies</p>
 						</div>
 					</div>
-					<h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Experienced for <br>Every Kinds of ITSolution</h1>
+					<h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Experienced for <br>Every Kinds of IT Solution</h1>
 
 				</div>
 			</div>
@@ -85,7 +116,7 @@
 		<div class="container">
 			<div class="row justify-content-center pb-5">
 				<div class="col-lg-6 heading-section text-center ftco-animate" data-aos="fade-up">
-					<h2 class="mb-4">More than <span>35+</span> years we provide <span>IT Solution</span></h2>
+					<h2 class="mb-4">Providing <span>high-end</span> IT solutions <span>for you</span></h2>
 					<p>Founded on the principles of integrity, collaboration, and technological expertise, IXORA serves as a strategic partner for organizations seeking to leverage the latest advancements in information and communication technology (ICT).</p>
 				</div>
 			</div>
@@ -129,11 +160,11 @@
 				<div class="col-md-6 p-3 pl-md-5 py-5 bg-primary">
 					<div class="row justify-content-start pb-3">
 						<div class="col-md-12 heading-section heading-section-white ftco-animate">
-							<h2 class="mb-4">Consult us here in <span>ITSolution</span></h2>
+							<h2 class="mb-4">Consult us here in <span>IT Solution</span></h2>
 							<p>Our team of seasoned professionals brings together extensive industry knowledge and practical experience to deliver transformative solutions that drive operational efficiency, enhance productivity, and foster sustainable growth.</p>
 						</div>
 					</div>
-					<div class="row">
+					<!--<div class="row">
 						<div class="col-md-6 justify-content-center counter-wrap ftco-animate">
 							<div class="block-18 mb-4">
 								<div class="text">
@@ -166,7 +197,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div>-->
 				</div>
 			</div>
 		</div>
@@ -246,16 +277,16 @@
 			<div class="row">
 				<div class="col-md-6 half ftco-animate">
 					<h2 class="mb-4">Don't hesitate to contact us</h2>
-					<form action="#" class="appointment">
+					<form action="#" method="POST" class="appointment" id="contactForm">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Your Name">
+									<input type="text" name="name" class="form-control" placeholder="Your Name" required data-parsley-trigger="keyup">
 								</div>
-							</div>
+							</div> 
 							<div class="col-md-6">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Email">
+									<input type="text" name="email" class="form-control" placeholder="Email" required data-parsley-type="email" data-parsley-trigger="keyup">
 								</div>
 							</div>
 							<div class="col-md-12">
@@ -263,14 +294,17 @@
 									<div class="form-field">
 										<div class="select-wrap">
 											<div class="icon"><span class="fa fa-chevron-down"></span></div>
-											<select name="" id="" class="form-control">
-												<option value="">Services</option>
-												<option value="">Web Development</option>
-												<option value="">Database Analysis</option>
-												<option value="">Server Security</option>
-												<option value="">UX/UI Strategy</option>
-												<option value="">Branding</option>
-												<option value="">Applications</option>
+											<select name="services" id="" class="form-control" required>
+											    <option value="">Select Services</option>
+												<option value="Services">Services</option>
+												<option value="Web Development">Web Development</option>
+												<option value="Database Analysis">Database Analysis</option>
+												<option value="Server Security">Server Security</option>
+												<option value="UX/UI Strategy">UX/UI Strategy</option>
+												<option value="Branding">Branding</option>
+												<option value="Applications">Applications</option>
+												<option value="Careers">Careers</option>
+												<option value="Other">Other</option>
 											</select>
 										</div>
 									</div>
@@ -278,12 +312,15 @@
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+									<textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
 								</div>
 							</div>
 							<div class="col-md-12">
+								<div class="g-recaptcha" data-sitekey="6LezbQwqAAAAAJrQDkN6JRzlqd2hyuQ9cdvdd7I7"></div>
+							</div>
+							<div class="col-md-12 mt-4">
 								<div class="form-group">
-									<input type="submit" value="Send message" class="btn btn-primary py-3 px-4">
+									<input type="submit" value="Send message" id="submit_btn" class="btn btn-primary py-3 px-4">
 								</div>
 							</div>
 						</div>
@@ -352,6 +389,7 @@
 		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery-migrate-3.0.1.min.js"></script>
 		<script src="js/popper.min.js"></script>
@@ -364,6 +402,8 @@
 		<script src="js/jquery.animateNumber.min.js"></script>
 		<script src="js/scrollax.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.0.0/parsley.min.js" integrity="sha512-83WT9hUVM+iU1MUFfipwr7JcCGriOEmzijo1EiHf30IXsMyMKRTy33uTl1prtJNGc2AlJJxEFVTTIQhai7az3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		<script src="js/google-map.js"></script>
 		<script src="js/main.js?v=46215"></script>
 		<script>
@@ -379,6 +419,88 @@
 						icon.removeClass('fa-close').addClass('fa-align-justify');
 					}
 				});
+				
+				$('#contactForm').parsley();
+				$('#contactForm').on('submit',function(e){
+				    e.preventDefault();
+
+					var recaptcha = $("#g-recaptcha-response").val();
+					if (recaptcha === "") {
+						Swal.fire({
+							position: "bottom-end",
+							icon: "error",
+							title: "Please complete the reCAPTCHA.",
+							showConfirmButton: false,
+							timer: 2500
+						});	
+						return;
+					}
+
+				    if($('#contactForm').parsley().isValid())
+                    {
+                        
+                        $.ajax({
+                            url:"./action/sendEmail.php",
+                            method:"POST",
+                            data:$('#contactForm').serialize(),
+                            beforeSend:function(){
+                             $('#submit_btn').attr('disabled','disabled');
+                             $('#submit_btn').text('Submiting...');
+                             
+                			 $('#loading_response').addClass('d-block');
+                			 $('#loading_response').removeClass('d-none');			 
+                            },
+                            success:function(data)
+                            {
+								alert(data);
+								$('#loading_response').addClass('d-none');
+								$('#loading_response').removeClass('d-block');
+								
+                                $('#contactForm')[0].reset();
+                                $('#contactForm').parsley().reset();
+                                
+                                $('#submit_btn').attr('disabled',false);
+                                $('#submit_btn').val('Send message');
+								
+								if(data == 'success'){
+									Swal.fire({
+									  position: "bottom-end",
+									  icon: "success",
+									  title: "Your message has been sent successfully.!!",
+									  showConfirmButton: false,
+									  timer: 2500
+									});
+								}else if(data == 'recaptcha_error'){
+									Swal.fire({
+									  position: "bottom-end",
+									  icon: "error",
+									  title: "reCAPTCHA verification failed. Please try again.!!",
+									  showConfirmButton: false,
+									  timer: 2500
+									});
+								}else{
+									Swal.fire({
+									  position: "bottom-end",
+									  icon: "error",
+									  title: "There have something wrong.!!",
+									  showConfirmButton: false,
+									  timer: 2500
+									});								
+								}
+                            }
+                        });    
+                    }else{
+                        Swal.fire({
+                          position: "bottom-end",
+                          icon: "error",
+                          title: "There have something error here..!!",
+                          showConfirmButton: false,
+                          timer: 2500
+                        });
+                    }    
+				    
+				});
+				
 			});
 		</script>
 	</body>

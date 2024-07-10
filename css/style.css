@@ -9912,3 +9912,52 @@ textarea.form-control {
   .nav-link.scrol_text:hover {
     background-color: #fff;
   }
+  
+#loading_response {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    z-index: 99999999;
+    text-align: center;
+    align-content: space-between;
+    /* left: 50%; */
+    top: 0%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+}
+
+#loading_response:after {
+    content: " ";
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    align-items: center;
+    position: relative;
+    margin: 15% 0;
+    border-radius: 50%;
+    border: 5px solid #cef;
+    border-color: #cef transparent #cef transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+#loading_response .textloading {
+    width: 100%;
+    position: fixed;
+    z-index: 999999999999;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(204 238 255 / 0.6);
+    margin-top: 10%;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}  
+  

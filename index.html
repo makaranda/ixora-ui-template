@@ -461,8 +461,9 @@
                                 
                                 $('#submit_btn').attr('disabled',false);
                                 $('#submit_btn').val('Send message');
-								grecaptcha.reset();
 								
+								grecaptcha.reset();
+
 								if(data == 'success'){
 									Swal.fire({
 									  position: "bottom-end",

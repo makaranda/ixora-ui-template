@@ -465,7 +465,7 @@
 								grecaptcha.reset();
 
 								if(data == 'success'){
-									
+
 									Swal.fire({
 									  position: "bottom-end",
 									  icon: "success",
@@ -475,6 +475,7 @@
 									});
 
 								}else if(data == 'recaptcha_error'){
+
 									Swal.fire({
 									  position: "bottom-end",
 									  icon: "error",
@@ -482,6 +483,7 @@
 									  showConfirmButton: false,
 									  timer: 2500
 									});
+									
 								}else{
 									Swal.fire({
 									  position: "bottom-end",

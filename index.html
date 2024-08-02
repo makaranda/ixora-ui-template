@@ -446,12 +446,13 @@
                             method:"POST",
                             data:$('#contactForm').serialize(),
                             beforeSend:function(){
+								
                              $('#submit_btn').attr('disabled','disabled');
                              $('#submit_btn').text('Submiting...');
                              
                 			 $('#loading_response').addClass('d-block');
                 			 $('#loading_response').removeClass('d-none');	
-							 		 
+
                             },
                             success:function(data)
                             {

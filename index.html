@@ -425,6 +425,7 @@
 				    e.preventDefault();
 
 					var recaptcha = $("#g-recaptcha-response").val();
+					
 					if (recaptcha === "") {
 
 						Swal.fire({
@@ -446,7 +447,7 @@
                             method:"POST",
                             data:$('#contactForm').serialize(),
                             beforeSend:function(){
-								
+
                              $('#submit_btn').attr('disabled','disabled');
                              $('#submit_btn').text('Submiting...');
                              
